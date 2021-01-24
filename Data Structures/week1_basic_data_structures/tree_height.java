@@ -58,8 +58,6 @@ public class tree_height {
 			while(!queue.isEmpty()){
 				level++;
 				int size = queue.size();
-				
-				
 				for (int i =0;i<size;i++){
 					if (!queue.isEmpty()){
 						int key = queue.poll();
@@ -68,10 +66,7 @@ public class tree_height {
 							queue.addAll(nodes.get(key));
 						}
 					}
-					
-				}
-
-				
+				}	
 			}
 			return level;
 
